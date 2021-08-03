@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/pinino.png">
+</head>
+
+<body class="bg-2">
+    <nav class="topnav">
+        <a class="home" href="home.html">Home</a>
+        <a class="active" href="login.html">Login</a>
+        <a href="tablero.html">Tablero</a>
+        <a href="cv.html">CV</a>
+    </nav>
+
+    <div class="centrar">
+        <form action="http://127.0.0.1/login_usuario" method="post" id="formulario">
+            <label for="usuario">Usuario:</label>
+            <input class="boxes" type="text" id="usuario">
+            <label for="contraseña">Contraseña:</label>
+            <input class="boxes" type="password" id="contraseña">
+            <div class="centrar"><input class="ingresar" type="submit" value="Ingresar"></div>
+        </form>
+    </div>
+
+    <nav class="botnav">
+        <div class="botnav-left">Desarrollo Web — Modulo 2</div>
+        <div class="botnav-right">Franco J. Pino</div>
+    </nav>
+</body>
+</html>

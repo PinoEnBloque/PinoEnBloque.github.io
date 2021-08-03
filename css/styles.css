@@ -1,0 +1,323 @@
+@font-face {
+    font-family: 'minecraftmedium';
+    src: url('../fonts/minecraft-webfont.woff2') format('woff2'), url('../fonts/minecraft-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+h1{
+    font-weight: normal;
+}
+
+
+body{
+    margin: 0px;
+    font-family: 'minecraftmedium', Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: rgb(12, 6, 30);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bg-1{background-image:  url('../img/bg-nebula1.png');}
+.bg-2{background-image:  url('../img/bg-nebula2.png');}
+.bg-3{background-image:  url('../img/bg-nebula3.png');}
+.bg-4{background-image:  url('../img/bg-nebula4.png');}
+
+nav{
+    background-color:rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+}
+
+nav h1{
+    font-size: 35px;
+}
+
+.topnav{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.topnav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px;
+    text-decoration: none;
+    font-size: 25px;
+    transition-duration: 0.3s;
+}
+
+.topnav a.home{
+    background-color: rgb(36, 1, 35);
+    background-color: rgba(36, 1, 35, 0.7);
+}
+
+.topnav a:hover {
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.topnav a.home:hover{
+    background-color: rgb(253, 227, 251);
+    background-color: rgba(253, 227, 251, 0.9);
+}
+
+
+.topnav a.active {
+    background-color: purple;
+    color: white;
+}
+
+.botnav{
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 20% 1fr 15%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.botnav-left{
+    grid-column-start: 1;
+}
+
+.botnav-right{
+    grid-column-start: 3;
+}
+
+/*================================================================*/
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+}
+
+.centrar-linea{
+    display: flex;
+    justify-content: center;
+}
+
+/*================================================================*/
+
+#inicio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    animation: fadeIn 3s;
+}
+
+#inicio span{width:2em;}
+
+#inicio a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 1em;
+    width: 300px;
+    height: 300px;
+}
+
+#inicio a:hover{background-color: rgba(0, 0, 0, 0.85);}
+
+#inicio a:visited{
+    color:fuchsia;
+    text-decoration: none;
+    font-weight: normal;
+    font-style: normal;
+}
+
+#inicio a:link{
+    color:fuchsia;
+    text-decoration: none;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*================================================================*/
+
+#formulario{
+    width: 350px;
+    padding: 30px 40px;
+    margin: 20px;
+    background-color:rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 1em;
+    animation: fadeIn 2s;
+}
+
+#formulario input{
+    border-radius: 1em;
+    font-family: 'minecraftmedium', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.boxes{
+    width: 95%;
+    height: 27px;
+    margin: 5px;
+    font-size: 16px;
+    background-color:rgba(255, 255, 255, 0.85);
+}
+
+.ingresar{
+    background-color: purple; /* Green */
+    border: none;
+    color: white;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    padding: 10px;
+}
+
+.ingresar:hover{
+    background-color: white; /* Green */
+    color: purple;
+}
+
+/*================================================================*/
+
+#tablero{
+    width: 460px;
+    height: 460px;
+    display: grid;
+    padding: 2%;
+    border-radius: 1em;
+    background-color:rgb(0, 0, 0);
+    background-color:rgba(0, 0, 0, 0.5);
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(8, 12.5%);
+    animation: fadeIn 2s;
+}
+
+.borde-negro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:rgb(14, 13, 13);
+    background-color: rgb(14, 13, 13);
+    color:rgb(14, 13, 13);
+    transition-duration: 0.4s;
+}
+
+.borde-blanco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:white solid;
+    background-color:whitesmoke;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.borde-negro:hover{color:white;}
+.borde-blanco:hover{color:black;}
+
+/*================================================================*/
+
+#cv{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 40% 1% 60%;
+    animation: fadeIn 2s;
+    padding-bottom: 1.5em;
+}
+
+.cv-container{
+    background-color:rgb(0, 0, 0);
+    background-color:rgba(0, 0, 0, 0.8);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.cv-container span{
+    padding-bottom: 6px;
+    font-size: 25px;
+    border-bottom: 4px solid purple;
+    display: block;
+    text-align: right;
+}
+
+.cv-profilepic{
+    height: 150px;
+    width: 150px;
+    border: 3px purple solid;
+    border-radius: 5em;
+}
+
+.cv-presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cv-presentacion h1{
+    font-size: 32px;
+    padding-top: 10px;
+    margin: 10px;
+}
+
+.cv-presentacion h2{
+    font-size: 25px;
+    font-weight: normal;
+    margin: 10px;
+    padding-top: 0px;
+    color: rgb(167, 4, 167);
+}
+
+.cv-presentacion-lista{
+    width: 10px;
+    height: 16px;
+    padding: 6px;
+}
+
+.cv-presentacion-linea{
+    padding-bottom: 3px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.cv-container a{
+    text-decoration: none;
+    color: fuchsia;
+}
+
+.cv-logopic{
+    width: 50%;
+    height: 50%;
+    padding: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cv-container blockquote{
+    font-size: 14px;
+    color: gray;
+    padding: 1px;
+    margin: 1px;
+}
+
+.cv-container ul{list-style-image: url('../img/list-point.png');}
+.cv-container li{padding-bottom: 12px;}
